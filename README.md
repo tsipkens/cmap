@@ -21,16 +21,17 @@ Nathaniel Smith. More information is available at https://bids.github.io/colorma
 Released under a [CCO license](https://creativecommons.org/about/cc0).
 
 #### 2. *cmocean*
+ More information is available at
+https://matplotlib.org/cmocean/. Released under a [MIT license](https://opensource.org/licenses/MIT).
+The colormaps are associated with:
+
 Kristen M. Thyng, Chad A. Greene, Robert D. Hetland, Heather M. Zimmerle,
 and Steven F. DiMarco. True colors of oceanography: Guidelines for effective
-and accurate colormap selection. Oceanography, September 2016.  
-http://dx.doi.org/10.5670/oceanog.2016.66. More information is available at
-https://matplotlib.org/cmocean/. Released under an [MIT license](https://opensource.org/licenses/MIT).
+and accurate colormap selection. Oceanography, September 2016. http://dx.doi.org/10.5670/oceanog.2016.66.
 
 #### 3. *colorbrewer2*
-Colormaps by Cynthia Brewer and Mark Harrower. More information
-    available at http://colorbrewer2.org/.
-    Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). 
+Colormaps by Cynthia Brewer and Mark Harrower. More information available at http://colorbrewer2.org/.
+Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). 
     
 #### 4. CMasher
 A collection of scientific colormaps for making accessible, informative and *cmashing* plots in Python. More information available at https://github.com/1313e/CMasher and https://cmasher.readthedocs.io/. Released under a [BSD 3-Clause "New" or "Revised" License license](https://github.com/1313e/CMasher/blob/master/LICENSE).
