@@ -1,4 +1,9 @@
 
+% GENERATE_SWAGES  Generates swages for colormaps in the current directory. 
+% These are incorporated into the README file.
+% Author: Timothy Sipkens, 2019
+%================================================================%
+
 clear;
 
 x = 0:255;
