@@ -15,7 +15,7 @@ always first.
 
 Sources of these colormaps include:
 
-#### 1. *matplotlib*
+#### 1. matplotlib
 Colormaps designed by Stéfan van der Walt and
 Nathaniel Smith. More information is available at https://bids.github.io/colormap/.
 Released under a [CCO license](https://creativecommons.org/about/cc0).
