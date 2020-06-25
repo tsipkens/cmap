@@ -41,6 +41,8 @@ A. Mikhailov. Turbo, An Improved Rainbow Colormap for Visualization.
 
 The colormaps, and swages indicating their color progression, are included below.
 
+------
+
 ### Sequantial colormaps
 
 ##### From matplotlib/mpl colormaps:
@@ -115,6 +117,8 @@ The colormaps, and swages indicating their color progression, are included below
 
 ![fgreen](docs/fgreen.jpg) *fgreen*
 
+------
+
 ### Divergent colormaps
 
 ##### From cmocean:
@@ -138,6 +142,8 @@ The colormaps, and swages indicating their color progression, are included below
 ![RdYlGn](docs/RdYlGn.jpg) *RdYlGn*
 
 ![spectral](docs/spectral.jpg) *spectral*
+
+------
 
 ### Rainbow colormaps
 
