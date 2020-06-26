@@ -7,20 +7,22 @@
 
 function cm = load_cmap(str,n,opt_interp)
 
-load([str,'.mat']); % load corresponding colormap
-    % colormaps are loaded as 'cm' variable into workspace
+data = load([str,'.mat']); % load corresponding colormap
+cm = data.cm;
 
     
 %-- Parse inputs ---------------------------------------------------------%
-p = size(cm,1);
+p = size(cm,1); % default size of colormap
+
 if ~exist('n','var'); n = []; end
+if isempty(n); n = 255; end % by default, output using 255 color
+
 if ~exist('opt_interp','var'); opt_interp = []; end
+if isempty(opt_interp); opt_interp = 'rgb'; end % by default, interpolate in rgb space
+%-------------------------------------------------------------------------%
 
-if isempty(n); n = p; end
-if isempty(opt_interp); opt_interp = 'rgb'; end
 
-
-%-- Modify the colormap, if n is specified -------------------------------%
+%-- Modify the colormap by interpolation ---------------------------------%
 %   Note: Interpolation can be done in hsv or rgb space depending on
 %   opt_interp.
 if strcmp(opt_interp,'hsv')
