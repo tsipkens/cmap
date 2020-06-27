@@ -34,7 +34,7 @@ Colormaps by Cynthia Brewer and Mark Harrower. More information available at htt
 Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). 
     
 #### 4. CMasher
-A collection of scientific colormaps for making accessible, informative and *cmashing* plots in Python. More information available at https://github.com/1313e/CMasher and https://cmasher.readthedocs.io/. Released under a [BSD 3-Clause "New" or "Revised" License license](https://github.com/1313e/CMasher/blob/master/LICENSE).
+A collection of scientific colormaps for making accessible, informative and *cmashing* plots in Python. More information available at https://github.com/1313e/CMasher and https://cmasher.readthedocs.io/. Released under a [BSD 3-Clause License](https://github.com/1313e/CMasher/blob/master/LICENSE).
 
 #### 5. turbo
 A. Mikhailov. Turbo, An Improved Rainbow Colormap for Visualization.
