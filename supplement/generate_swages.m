@@ -10,14 +10,15 @@ x = 0:255;
 imagesc(x);
 set(gca,'xtick',[])
 set(gca,'ytick',[])
-set(gcf, 'Position',  [100, 300, 300, 40]);
+set(gcf, 'Position',  [50, 150, 150, 20]);
 
-fn = dir(fullfile('','*.mat'));
+fn = dir(fullfile('','*.m'));
 
 for ii=1:length(fn)
-    if ~strcmp(fn(ii).name,'test_data.mat') % skip test data file
-        cmap_name = fn(ii).name(1:(end-4));
-        cm = load_cmap(cmap_name,255);
+    if ~strcmp(fn(ii).name, 'cmap_sweep.m') % skip test data file
+        % cmap_name = fn(ii).name(1:(end-4));
+        cmap_name = fn(ii).name(1:(end-2));
+        cm = eval([cmap_name);
         colormap(cm);
         
         F = getframe(gca);

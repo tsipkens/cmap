@@ -1,5 +1,5 @@
 
-cm = load_cmap('twilight');
+cm = dense;
 
 figure(1);
 L = 160*membrane(1,100);

@@ -1,153 +1,162 @@
 # Perceptually improved colormaps for MATLAB
 
-This repository contains Matlab data (`.mat`) files for colormaps, 
-mostly compiled from multiple, extenal sources, 
-with some *custom* colormaps that are specific to this package. 
-When loaded directly, the colormaps will appear as the variable `cm` in the
-workspace. Otherwise `load_cmap` can be used to load the colormap specified
-by a string, `str`, containing the colormap name. The function `load_cmap(str,n)`
-also takes `n` as a second input, which can be used reduce or increase (by interpolation)
-the number of colors in the colormap, while still respecting the color order.
+This repository contains files for colormaps, mostly compiled from multiple, external sources, with some *custom* colormaps that are specific to this package. The first step in their use is to add the parent folder to the sample project, e.g., 
 
-It is also noted that the *deep*, *dense*, *matter*, and *tempo* colormaps
-are reversed from their original order, such that the darker color is
-always first.
+```Matlab
+addpath cmap; % add cmap folder to the Matlab path
+```
+
+Then colormaps can be loaded by calling the functions that shares their name. For example, you can get the color data for the viridis colormap using, 
+
+```Matlab
+cm = viridis; % return colormap data to cm
+```
+
+or apply it to a plot using
+
+```Matlab
+colormap(viridis); % apply viridis to a plot
+```
+
+Optional arguments to these functions allow for changing the number of colors in the colormap. For example, getting the 100-color equivalent of viridis, 
+
+```Matlab
+viridis(100); % interpolate to 100 colors in RGB space
+```
+
+By default, this will use linear interpolation in RGB space. Alternatively, interpolation can be done in HSV space by appending `'hsv'` as an additional argument: 
+
+```Matlab
+viridis(100, 'hsv'); % interpolate to 100 colors in HSV space
+```
+
+It is also noted that the *deep*, *dense*, *matter*, and *tempo* colormaps are reversed from their original order, such that the darker color is always first. The colormaps, and swages indicating their color progression, are included at the end of this README. 
 
 Sources of these colormaps include:
 
 #### 1. matplotlib
-Colormaps designed by Stéfan van der Walt and
-Nathaniel Smith. More information is available at https://bids.github.io/colormap/.
-Released under a [CCO license](https://creativecommons.org/about/cc0).
+Colormaps designed by Stéfan van der Walt and Nathaniel Smith. More information is available at https://bids.github.io/colormap/. Released under a [CCO license](https://creativecommons.org/about/cc0).
 
 #### 2. cmocean
- More information is available at
-https://matplotlib.org/cmocean/. Released under a [MIT license](https://opensource.org/licenses/MIT).
-The colormaps are associated with:
+More information is available at https://matplotlib.org/cmocean/. Released under a [MIT license](https://opensource.org/licenses/MIT). The colormaps are associated with:
 
-Kristen M. Thyng, Chad A. Greene, Robert D. Hetland, Heather M. Zimmerle,
-and Steven F. DiMarco. True colors of oceanography: Guidelines for effective
-and accurate colormap selection. Oceanography, September 2016. http://dx.doi.org/10.5670/oceanog.2016.66.
+Kristen M. Thyng, Chad A. Greene, Robert D. Hetland, Heather M. Zimmerle, and Steven F. DiMarco. True colors of oceanography: Guidelines for effective and accurate colormap selection. Oceanography, September 2016. http://dx.doi.org/10.5670/oceanog.2016.66.
 
 #### 3. colorbrewer2
-Colormaps by Cynthia Brewer and Mark Harrower. More information available at http://colorbrewer2.org/.
-Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). 
+Colormaps by Cynthia Brewer and Mark Harrower. More information available at http://colorbrewer2.org/. Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). 
     
 #### 4. CMasher
 A collection of scientific colormaps for making accessible, informative and *cmashing* plots in Python. More information available at https://github.com/1313e/CMasher and https://cmasher.readthedocs.io/. Released under a [BSD 3-Clause License](https://github.com/1313e/CMasher/blob/master/LICENSE).
 
 #### 5. turbo
-A. Mikhailov. Turbo, An Improved Rainbow Colormap for Visualization.
-More information is available at https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html.
-Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). 
+A. Mikhailov. Turbo, An Improved Rainbow Colormap for Visualization. More information is available at https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html. Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). 
 
-## Swages
-
-The colormaps, and swages indicating their color progression, are included below.
+#### 5. Custom
+A set of custom colormaps specific to this package. 
 
 ------
 
-### Sequantial colormaps
+### Sequential colormaps
+
+Sequential colormaps have a monotonic change in perceived brightness. 
 
 ##### From matplotlib/mpl colormaps:
 
-![viridis](docs/viridis.jpg) *viridis*
+![cividis](docs/cividis.jpg) *cividis*
 
 ![inferno](docs/inferno.jpg) *inferno*
 
-![plasma](docs/plasma.jpg) *plasma*
-
 ![magma](docs/magma.jpg) *magma*
 
-![cividis](docs/cividis.jpg) *cividis*
+![plasma](docs/plasma.jpg) *plasma*
+
+![viridis](docs/viridis.jpg) *viridis*
 
 ##### From cmocean:
-
-![thermal](docs/thermal.jpg) *thermal*
-
-![haline](docs/haline.jpg) *haline*
-
-![ice](docs/ice.jpg) *ice*
 
 ![deep](docs/deep.jpg) *deep*
 
 ![dense](docs/dense.jpg) *dense*
 
-![matter](docs/matter.jpg) *matter*
+![haline](docs/haline.jpg) *haline*
 
-![tempo](docs/tempo.jpg) *tempo*
+![ice](docs/ice.jpg) *ice*
+
+![matter](docs/matter.jpg) *matter*
 
 ![speed](docs/speed.jpg) *speed*
 
+![tempo](docs/tempo.jpg) *tempo*
+
+![thermal](docs/thermal.jpg) *thermal*
+
 ##### From colorbrewer2:
 
-![YlGnBu](docs/YlGnBu.jpg) *YlGnBu*
-
-![GnBu](docs/GnBu.jpg) *GnBu*
+![blues](docs/blues.jpg) *blues*
 
 ![BuPu](docs/BuPu.jpg) *BuPu*
 
-![RdPu](docs/RdPu.jpg) *RdPu*
+![GnBu](docs/GnBu.jpg) *GnBu*
+
+![greens](docs/greens.jpg) *greens*
 
 ![PuRd](docs/PuRd.jpg) *PuRd*
 
 ![purples](docs/purples.jpg) *purples*
 
-![blues](docs/blues.jpg) *blues*
-
-![greens](docs/greens.jpg) *greens*
+![RdPu](docs/RdPu.jpg) *RdPu*
 
 ![reds](docs/reds.jpg) *reds*
+
+![YlGnBu](docs/YlGnBu.jpg) *YlGnBu*
 
 ##### From CMasher:
 
 ![eclipse](docs/eclipse.jpg) *eclipse*
 
-![rainforest](docs/rainforest.jpg) *rainforest*
-
 ![ember](docs/ember.jpg) *ember*
-
-![nuclear](docs/nuclear.jpg) *nuclear*
 
 ![lavender](docs/lavender.jpg) *lavender*
 
+![nuclear](docs/nuclear.jpg) *nuclear*
+
 ![ocean](docs/ocean.jpg) *ocean*
+
+![rainforest](docs/rainforest.jpg) *rainforest*
 
 ##### Custom (only approximately perceptually uniform):
 
 ![fblue](docs/fblue.jpg) *fblue*
 
-![fred](docs/fred.jpg) *fred*
-
 ![fgreen](docs/fgreen.jpg) *fgreen*
 
-------
+![fred](docs/fred.jpg) *fred*
 
 ### Divergent colormaps
+
+Divergent colormaps have the brightest or darkest color in the middle, with a monotonic change in perceived brightness in either direction. 
 
 ##### From cmocean:
 
 ![balance](docs/balance.jpg) *balance*
 
-![delta](docs/delta.jpg) *delta*
-
 ![curl](docs/curl.jpg) *curl*
+
+![delta](docs/delta.jpg) *delta*
 
 ##### From colorbrewer2:
 
-![PuOr](docs/PuOr.jpg) *PuOr*
-
 ![RdBu](docs/RdBu.jpg) *RdBu*
-
-![PrGn](docs/PrGn.jpg) *PrGn*
-
-![PiYG](docs/PiYG.jpg) *PiYG*
 
 ![RdYlGn](docs/RdYlGn.jpg) *RdYlGn*
 
-![spectral](docs/spectral.jpg) *spectral*
+![PiYG](docs/PiYG.jpg) *PiYG*
 
-------
+![PrGn](docs/PrGn.jpg) *PrGn*
+
+![PuOr](docs/PuOr.jpg) *PuOr*
+
+![spectral](docs/spectral.jpg) *spectral*
 
 ### Rainbow colormaps
 
