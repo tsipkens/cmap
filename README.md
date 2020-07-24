@@ -94,21 +94,21 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![blues](docs/blues.jpg) *blues*
 
-![BuPu](docs/BuPu.jpg) *BuPu*
+![BuPu](docs/BuPu.jpg) *bupu*
 
-![GnBu](docs/GnBu.jpg) *GnBu*
+![GnBu](docs/GnBu.jpg) *gnbu*
 
 ![greens](docs/greens.jpg) *greens*
 
-![PuRd](docs/PuRd.jpg) *PuRd*
+![PuRd](docs/PuRd.jpg) *purd*
 
 ![purples](docs/purples.jpg) *purples*
 
-![RdPu](docs/RdPu.jpg) *RdPu*
+![RdPu](docs/RdPu.jpg) *rdpu*
 
 ![reds](docs/reds.jpg) *reds*
 
-![YlGnBu](docs/YlGnBu.jpg) *YlGnBu*
+![YlGnBu](docs/YlGnBu.jpg) *ylgnbu*
 
 ##### From CMasher:
 
@@ -146,15 +146,15 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 
 ##### From colorbrewer2:
 
-![RdBu](docs/RdBu.jpg) *RdBu*
+![RdBu](docs/RdBu.jpg) *rdbu*
 
-![RdYlGn](docs/RdYlGn.jpg) *RdYlGn*
+![RdYlGn](docs/RdYlGn.jpg) *rdylgn*
 
-![PiYG](docs/PiYG.jpg) *PiYG*
+![PiYG](docs/PiYG.jpg) *piyg*
 
-![PrGn](docs/PrGn.jpg) *PrGn*
+![PrGn](docs/PrGn.jpg) *prgn*
 
-![PuOr](docs/PuOr.jpg) *PuOr*
+![PuOr](docs/PuOr.jpg) *puor*
 
 ![spectral](docs/spectral.jpg) *spectral*
 
