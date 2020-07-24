@@ -30,7 +30,9 @@ By default, this will use linear interpolation in RGB space. Alternatively, inte
 viridis(100, 'hsv'); % interpolate to 100 colors in HSV space
 ```
 
-It is also noted that the *deep*, *dense*, *matter*, and *tempo* colormaps are reversed from their original order, such that the darker color is always first. The colormaps, and swages indicating their color progression, are included at the end of this README. 
+Note that the *deep*, *dense*, *matter*, and *tempo* colormaps are reversed from their original order, such that the darker color is always first. The colormaps, and swages indicating their color progression, are included at the end of this README. 
+
+### Colormap sources
 
 Sources of these colormaps include:
 
@@ -38,9 +40,7 @@ Sources of these colormaps include:
 Colormaps designed by Stéfan van der Walt and Nathaniel Smith. More information is available at https://bids.github.io/colormap/. Released under a [CCO license](https://creativecommons.org/about/cc0).
 
 #### 2. cmocean
-More information is available at https://matplotlib.org/cmocean/. Released under a [MIT license](https://opensource.org/licenses/MIT). The colormaps are associated with:
-
-Kristen M. Thyng, Chad A. Greene, Robert D. Hetland, Heather M. Zimmerle, and Steven F. DiMarco. True colors of oceanography: Guidelines for effective and accurate colormap selection. Oceanography, September 2016. http://dx.doi.org/10.5670/oceanog.2016.66.
+More information is available at https://matplotlib.org/cmocean/. Released under a [MIT license](https://opensource.org/licenses/MIT). The colormaps are associated with: Kristen M. Thyng, Chad A. Greene, Robert D. Hetland, Heather M. Zimmerle, and Steven F. DiMarco. True colors of oceanography: Guidelines for effective and accurate colormap selection. Oceanography, September 2016. http://dx.doi.org/10.5670/oceanog.2016.66.
 
 #### 3. colorbrewer2
 Colormaps by Cynthia Brewer and Mark Harrower. More information available at http://colorbrewer2.org/. Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). 
@@ -53,6 +53,32 @@ A. Mikhailov. Turbo, An Improved Rainbow Colormap for Visualization. More inform
 
 #### 5. Custom
 A set of custom colormaps specific to this package. 
+
+### Sweep through colormap (cmap_sweep)
+
+A function is also included to sweep through colors in a standard Matlab plot. To demonstrate we first generate some synthetic data with a set number of lines:
+
+```Matlab
+n_lines = 40; % number of lines to plot
+
+addpath supplement; % add supplemental functions / scripts
+
+% generate test data
+y = test_data(round(n_lines*2.5), 300);
+y = y(:, 1:n_lines);
+```
+
+Then, one can sweep through the viridis colormap using: 
+
+```Matlab
+figure(1);
+cmap_sweep(n_lines, viridis); % set colororder for plot
+plot(y); % plot data
+```
+
+This results in:
+
+<img src="docs/cmap_sweep.jpg" width="450px" align="left">
 
 ------
 
