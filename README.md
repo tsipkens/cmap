@@ -78,7 +78,7 @@ plot(y); % plot data
 
 This results in:
 
-<img src="docs/cmap_sweep.jpg" width="450px" align="left">
+<img src="docs/cmap_sweep.jpg" width="450px">
 
 ------
 
