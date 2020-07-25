@@ -164,7 +164,7 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 
 ##### From cmocean:
 
-![balance](docs/balance.jpg) *balance*
+![balance](docs/balance.jpg) *balanced* (originally balance, name conflict)
 
 ![curl](docs/curl.jpg) *curl*
 
