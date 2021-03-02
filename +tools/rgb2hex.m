@@ -24,7 +24,7 @@ rgb = round(rgb);
 
 
 % Convert to HEX.
-hex = reshape(sprintf('#%02X%02X%02X', rgb), 7, [])';
+hex = reshape(sprintf('#%02X%02X%02X', rgb'), 7, [])';
 hex = num2cell(hex, 2);  % convert to cell for easier copying
 
 end
