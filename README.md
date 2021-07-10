@@ -72,11 +72,11 @@ Then, one can sweep through the viridis colormap using:
 
 ```Matlab
 figure(1);
-cmap_sweep(n_lines, viridis); % set colororder for plot
+cmap_sweep(n_lines, inferno); % set colororder for plot
 plot(y); % plot data
 ```
 
-This results in:
+A sample plot generated using this procedure (Sipkens et al., Submitted):
 
 <img src="docs/cmap_sweep.jpg" width="450px">
 
