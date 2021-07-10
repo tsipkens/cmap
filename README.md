@@ -78,7 +78,7 @@ plot(y); % plot data
 
 A sample plot generated using this procedure (Sipkens et al., Submitted):
 
-<img src="docs/cmap_sweep.jpg" width="450px">
+<img src="docs/cmap_sweep.jpg" width="350px">
 
 ------
 
