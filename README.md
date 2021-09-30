@@ -158,6 +158,8 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![fred](docs/fred.jpg) *fred*
 
+![fred](docs/internet.jpg) *internet*
+
 ### Divergent colormaps
 
 Divergent colormaps have the brightest or darkest color in the middle, with a monotonic change in perceived brightness in either direction. 
