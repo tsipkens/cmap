@@ -1,6 +1,6 @@
 # Perceptually improved colormaps for MATLAB
 
-This repository contains files for colormaps, mostly compiled from multiple, external sources (see ), with some *custom* colormaps that are specific to this package. The first step in their use is to add the parent folder to the sample project, e.g., 
+This repository contains files for colormaps, mostly compiled from multiple, external sources (see [dedicated section below](#colormap-sources)), with some *custom* colormaps that are specific to this package. The first step in their use is to add the parent folder to the sample project, e.g., 
 
 ```Matlab
 addpath cmap; % add cmap folder to the Matlab path
