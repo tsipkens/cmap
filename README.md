@@ -1,6 +1,6 @@
 # Perceptually improved colormaps for MATLAB
 
-This repository contains files for colormaps, mostly compiled from multiple, external sources, with some *custom* colormaps that are specific to this package. The first step in their use is to add the parent folder to the sample project, e.g., 
+This repository contains files for colormaps, mostly compiled from multiple, external sources (see ), with some *custom* colormaps that are specific to this package. The first step in their use is to add the parent folder to the sample project, e.g., 
 
 ```Matlab
 addpath cmap; % add cmap folder to the Matlab path
@@ -37,7 +37,7 @@ Note that the *deep*, *dense*, *matter*, and *tempo* colormaps are reversed from
 Sources of these colormaps include:
 
 #### 1. matplotlib
-Colormaps designed by Stéfan van der Walt and Nathaniel Smith. More information is available at https://bids.github.io/colormap/. Released under a [CCO license](https://creativecommons.org/about/cc0).
+Colormaps designed by Stéfan van der Walt (https://github.com/stefanv) and Nathaniel Smith (https://github.com/njsmith). More information is available at https://bids.github.io/colormap/. Released under a [CCO license](https://creativecommons.org/about/cc0). You can learn more about the science behind the creation of these kinds of colormaps by watching their presentation of viridis: https://youtu.be/xAoljeRJ3lU. The cividis colormap is a variant of  ‘viridis’ developed by Jamie R. Nuñez, Christopher R. Anderton, and Ryan S. Renslow. 
 
 #### 2. cmocean
 More information is available at https://matplotlib.org/cmocean/. Released under a [MIT license](https://opensource.org/licenses/MIT). The colormaps are associated with: Kristen M. Thyng, Chad A. Greene, Robert D. Hetland, Heather M. Zimmerle, and Steven F. DiMarco. True colors of oceanography: Guidelines for effective and accurate colormap selection. Oceanography, September 2016. http://dx.doi.org/10.5670/oceanog.2016.66.
@@ -45,13 +45,17 @@ More information is available at https://matplotlib.org/cmocean/. Released under
 #### 3. colorbrewer2
 Colormaps by Cynthia Brewer and Mark Harrower. More information available at http://colorbrewer2.org/. Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). 
     
-#### 4. CMasher
+#### 4. cmasher
 A collection of scientific colormaps for making accessible, informative and *cmashing* plots in Python. More information available at https://github.com/1313e/CMasher and https://cmasher.readthedocs.io/. Released under a [BSD 3-Clause License](https://github.com/1313e/CMasher/blob/master/LICENSE).
 
 #### 5. turbo
 A. Mikhailov. Turbo, An Improved Rainbow Colormap for Visualization. More information is available at https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html. Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). 
 
-#### 5. Custom
+#### 6. seaborn
+
+Originally for Python by [Michael Waskom](https://mwaskom.github.io/). For supporting discussion see README at https://github.com/mwaskom/seaborn and https://seaborn.pydata.org/tutorial/color_palettes.html. Released under a [BSD 3-Clause License](https://github.com/mwaskom/seaborn/blob/master/LICENSE). 
+
+#### 5. custom
 A set of custom colormaps specific to this package. 
 
 ### Sweep through colormap (cmap_sweep)
@@ -86,7 +90,7 @@ A sample plot generated using this procedure (Sipkens et al., Submitted):
 
 Sequential colormaps have a monotonic change in perceived brightness. 
 
-##### From matplotlib/mpl colormaps:
+##### matplotlib/mpl colormaps
 
 ![cividis](docs/cividis.jpg) *cividis*
 
@@ -98,7 +102,7 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![viridis](docs/viridis.jpg) *viridis*
 
-##### From cmocean:
+##### cmocean
 
 ![deep](docs/deep.jpg) *deep*
 
@@ -116,7 +120,7 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![thermal](docs/thermal.jpg) *thermal*
 
-##### From colorbrewer2:
+##### colorbrewer2
 
 ![blues](docs/blues.jpg) *blues*
 
@@ -136,7 +140,7 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![YlGnBu](docs/YlGnBu.jpg) *ylgnbu*
 
-##### From CMasher:
+##### cmasher
 
 ![eclipse](docs/eclipse.jpg) *eclipse*
 
@@ -149,6 +153,16 @@ Sequential colormaps have a monotonic change in perceived brightness.
 ![ocean](docs/ocean.jpg) *ocean*
 
 ![rainforest](docs/rainforest.jpg) *rainforest*
+
+##### seaborn
+
+![rocket](docs/rocket.jpg) *rocket*
+
+![mako](docs/mako.jpg) *mako*
+
+![flare](docs/flare.jpg) *flare*
+
+![crest](docs/crest.jpg) *crest*
 
 ##### Custom (only approximately perceptually uniform):
 
@@ -166,7 +180,7 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 
 ##### From cmocean:
 
-![balance](docs/balance.jpg) *balanced* (originally balance, name conflict)
+![balanced](docs/balanced.jpg) *balanced* (originally balance, name conflict in Matlab)
 
 ![curl](docs/curl.jpg) *curl*
 

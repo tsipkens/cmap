@@ -6,23 +6,19 @@
 
 clear;
 
-x = 0:255;
-imagesc(x);
-set(gca,'xtick',[])
-set(gca,'ytick',[])
-set(gcf, 'Position',  [50, 150, 150, 20]);
-
 fn = dir(fullfile('','*.m'));
 
 for ii=1:length(fn)
     if ~strcmp(fn(ii).name, 'cmap_sweep.m') % skip test data file
         % cmap_name = fn(ii).name(1:(end-4));
         cmap_name = fn(ii).name(1:(end-2));
-        cm = eval(cmap_name);
-        colormap(cm);
+        n = 350;
+        cm = eval([cmap_name, '(', num2str(n), ')']);
         
-        F = getframe(gca);
-        imwrite(F.cdata,['docs/',cmap_name,'.jpg']);
+        im = repmat(reshape(cm, [1,n,3]),[35,1,1]);
+        
+        imwrite(im, ...
+            ['docs/',cmap_name,'.jpg']);
     end
 end
 
