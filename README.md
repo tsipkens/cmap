@@ -164,7 +164,9 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![crest](docs/crest.jpg) *crest*
 
-#### custom (only approximately perceptually uniform):
+#### custom
+
+(only approximately perceptually uniform)
 
 ![fblue](docs/fblue.jpg) *fblue*
 
