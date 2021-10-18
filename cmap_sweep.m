@@ -15,10 +15,15 @@ if isempty(cm); cm = colormap('gray'); end % by default use grayscale
 
 
 % determine positions in colormap to use
-n1 = floor(size(cm,1)/n); % interval between colormap indices
-n2 = length(cm)-n*n1+1;   % starting index, i.e. mod(cm,n) does not always equal 0
-cm2 = cm(n2:n1:end,:);    % adjust colormap to appropriate size
-
+if n<5
+    n1 = round((0:(n-1)) ./ (n-1) .* ...
+        (size(cm,1) - 1)) + 1;
+    cm2 = cm(n1, :);
+else
+    n1 = floor(size(cm, 1) / n); % interval between colormap indices
+    n2 = length(cm) - n*n1 + 1;   % starting index, i.e. mod(cm,n) does not always equal 0
+    cm2 = cm(n2:n1:end, :);    % adjust colormap to appropriate size
+end
 
 set(gca,'ColorOrder',cm2,'NextPlot','replacechildren');
     % set ColorOrder for current axis
