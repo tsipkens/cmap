@@ -14,8 +14,11 @@ if ~exist('cm','var'); cm = []; end
 if isempty(cm); cm = colormap('gray'); end % by default use grayscale
 
 
-% determine positions in colormap to use
-if n<5
+% Determine positions in colormap to use.
+% Method varies subtly depending on n.
+if n == 1
+    cm2 = cm(round(size(cm,1) / 2), :);
+elseif n < 5
     n1 = round((0:(n-1)) ./ (n-1) .* ...
         (size(cm,1) - 1)) + 1;
     cm2 = cm(n1, :);
