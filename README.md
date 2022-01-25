@@ -55,7 +55,14 @@ A. Mikhailov. Turbo, An Improved Rainbow Colormap for Visualization. More inform
 
 Originally for Python by [Michael Waskom](https://mwaskom.github.io/). For supporting discussion see README at https://github.com/mwaskom/seaborn and https://seaborn.pydata.org/tutorial/color_palettes.html. Released under a [BSD 3-Clause License](https://github.com/mwaskom/seaborn/blob/master/LICENSE). 
 
+### Scientific colour maps
+
+A set of scientific colour maps by [Fabio Crameri](https://www.fabiocrameri.ch/colourmaps/). Released under an [MIT License](https://opensource.org/licenses/MIT). Citable at: 
+
+> Crameri, F. (2018). Scientific colour maps. Zenodo. http://doi.org/10.5281/zenodo.1243862
+
 ### custom
+
 A set of custom colormaps specific to this package. 
 
 ## Sweep through colormap (cmap_sweep)
@@ -164,6 +171,24 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![crest](docs/crest.jpg) *crest*
 
+#### Scientific colour maps
+
+![acton](docs/acton.jpg) *acton*
+
+![buda](docs/buda.jpg) *buda*
+
+![devon](docs/devon.jpg) *devon*
+
+![hawaii](docs/hawaii.jpg) *hawaii*
+
+![imola](docs/imola.jpg) *imola*
+
+![lajolla](docs/lajolla.jpg) *lajolla*
+
+![oslo](docs/oslo.jpg) *oslo*
+
+![tokyo](docs/tokyo.jpg) *tokyo*
+
 #### custom
 
 (only approximately perceptually uniform)
@@ -204,8 +229,28 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 
 ![spectral](docs/spectral.jpg) *spectral*
 
+#### Scientific colour maps
+
+![cork](docs/cork.jpg) *cork*
+
+![roma](docs/roma.jpg) *roma*
+
+![vik](docs/vik.jpg) *vik*
+
 ------
 
-### Rainbow colormaps
+### Cyclic/rainbow colormaps
+
+#### Scientific colour maps
+
+![bamo](docs/bamo.jpg) *bamo*
+
+![corko](docs/corko.jpg) *corko*
+
+![romao](docs/romao.jpg) *romao*
+
+![viko](docs/viko.jpg) *viko*
+
+#### Other
 
 ![turbo](docs/turbo.jpg) *turbo* (dedicated source)
