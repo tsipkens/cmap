@@ -1,5 +1,9 @@
 # Perceptually uniform colormaps for MATLAB
 
+**NOTE**: All rights to the original authors. For licensing see information for individual sources in [Colormap sources](#colormap-sources). Custom colormaps new to this work are released under a [MIT License](https://opensource.org/licenses/MIT). 
+
+-----
+
 This repository contains files for colormaps, mostly compiled from multiple, external sources (see [dedicated section below](#colormap-sources)), with some *custom* colormaps that are specific to this package. The first step in their use is to add the parent folder to the sample project, e.g., 
 
 ```Matlab
@@ -52,11 +56,9 @@ A collection of scientific colormaps for making accessible, informative and *cma
 A. Mikhailov. Turbo, An Improved Rainbow Colormap for Visualization. More information is available at https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html. Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). 
 
 ### seaborn
-
 Originally for Python by [Michael Waskom](https://mwaskom.github.io/). For supporting discussion see README at https://github.com/mwaskom/seaborn and https://seaborn.pydata.org/tutorial/color_palettes.html. Released under a [BSD 3-Clause License](https://github.com/mwaskom/seaborn/blob/master/LICENSE). 
 
 ### Scientific colour maps
-
 A set of scientific colour maps by [Fabio Crameri](https://www.fabiocrameri.ch/colourmaps/). Released under an [MIT License](https://opensource.org/licenses/MIT). Citable at: 
 
 > Crameri, F. (2018). Scientific colour maps. Zenodo. http://doi.org/10.5281/zenodo.1243862
