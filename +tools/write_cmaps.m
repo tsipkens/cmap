@@ -44,6 +44,8 @@ for ii=1:length(fn)
         a = strrep(a, ' 0', '\t0');
         a = strrep(a, ' 1', '\t1');
         a = strrep(a, '0\t', '0.000000\t');
+        a = strrep(a, ' 1\t', ' 1.000000\t');
+        a = strrep(a, '\t1', '\t1.000000');
         
         %{
         % OPTION B: Using num2str.
