@@ -42,10 +42,10 @@ for ii=1:length(fn)
         a = strrep(a, '[', '[\n   ');
         a = strrep(a, ']', '\n];\n\n');
         a = strrep(a, ' 0', '\t0');
-        a = strrep(a, ' 1', '\t1');
-        a = strrep(a, '0\t', '0.000000\t');
-        a = strrep(a, ' 1\t', ' 1.000000\t');
-        a = strrep(a, '\t1', '\t1.000000');
+        a = strrep(a, ' 1', '\t1');  % space out 1s
+        a = strrep(a, '0\t', '0.000000\t');  % add decimals to 0s
+        a = strrep(a, ' 1\t', ' 1.000000\t');  % add decimals to 1s
+        a = strrep(a, '\t1', '\t1.000000');  % add decimals to 1s, alt. scenario
         
         %{
         % OPTION B: Using num2str.
