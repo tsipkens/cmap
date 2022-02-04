@@ -36,11 +36,26 @@ for ii=1:length(fn)
         txt = strcat(txt, "%% Data for colormap:\n");
         txt = strcat(txt, "cm = ");
         
+        % OPTION A: Using mat2str.
         a = mat2str(cm, 9);
         a = strrep(a, ';', '\n   ');
         a = strrep(a, '[', '[\n   ');
         a = strrep(a, ']', '\n];\n\n');
         a = strrep(a, ' 0', '\t0');
+        a = strrep(a, ' 1', '\t1');
+        a = strrep(a, '0\t', '0.000000\t');
+        
+        %{
+        % OPTION B: Using num2str.
+        a = num2str(cm);
+        a = strcat(a, ';');
+        a = a';
+        a = a(:)';
+        a = strrep(a, ';', '\n   ');
+        a = ['[\n   ', a, '];\n\n'];
+        a = strrep(a, '   ];', '];');
+        %}
+        
         txt = strcat(txt, a);
         
         txt = strcat(txt, "%%-- Modify the colormap by interpolation ---------------------------------%%\n");
