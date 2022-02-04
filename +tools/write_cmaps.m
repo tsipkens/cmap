@@ -33,26 +33,26 @@ for ii=1:length(fn)
         txt = strcat(txt, "if isempty(opt_interp); opt_interp = 'rgb'; end\n");
         txt = strcat(txt, "%%-------------------------------------------------------------------------%%\n\n");
         
-        txt = strcat(txt, "%% data for colormap\n");
+        txt = strcat(txt, "%% Data for colormap:\n");
         txt = strcat(txt, "cm = ");
         
         a = mat2str(cm, 9);
         a = strrep(a, ';', '\n   ');
         a = strrep(a, '[', '[\n   ');
         a = strrep(a, ']', '\n];\n\n');
-        a = strrep(a, ' ,0', '\t,0');
+        a = strrep(a, ' 0', '\t0');
         txt = strcat(txt, a);
         
         txt = strcat(txt, "%%-- Modify the colormap by interpolation ---------------------------------%%\n");
         txt = strcat(txt, "%%   Note: Interpolation can be done in hsv or rgb space depending on opt_interp.\n");
         txt = strcat(txt, "p = size(cm,1); %% default size of colormap\n");
-        txt = strcat(txt, "if strcmp(opt_interp,'hsv')\n");
+        txt = strcat(txt, "if strcmp(opt_interp, 'hsv')\n");
         txt = strcat(txt, "    hsv = rgb2hsv(cm);\n");
         txt = strcat(txt, "    hsv = interp1(1:p, hsv, linspace(1,p,n), 'linear');\n");
         txt = strcat(txt, "    cm = hsv2rgb(hsv);\n");
         txt = strcat(txt, "elseif strcmp(opt_interp, 'none') %% do nothing\n");
         txt = strcat(txt, "else\n");
-        txt = strcat(txt, "    cm = interp1(1:p, cm, linspace(1,p,n), 'linear');\n\n");
+        txt = strcat(txt, "    cm = interp1(1:p, cm, linspace(1,p,n), 'linear');\n");
         txt = strcat(txt, "end\n\n");
 
         txt = strcat(txt, "end\n");
