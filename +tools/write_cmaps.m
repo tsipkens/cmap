@@ -1,5 +1,6 @@
 
-% WRITE_CMAPS  Write MATLAB scripts
+% WRITE_CMAPS  Write MATLAB scripts.
+% Note: Requires 'data' subfolder, containing colormap CSV, to work.
 % Author: Timothy Sipkens, 2019
 %================================================================%
 
@@ -34,31 +35,37 @@ for ii=1:length(fn)
         txt = strcat(txt, "%%-------------------------------------------------------------------------%%\n\n");
         
         txt = strcat(txt, "%% Data for colormap:\n");
-        txt = strcat(txt, "cm = ");
+        txt = strcat(txt, "cm = [\n\t");
         
-        % OPTION A: Using mat2str.
+        %== Format colormap data ===========================%
         a = mat2str(cm, 9);
-        a = strrep(a, ';', '\n   ');
-        a = strrep(a, '[', '[\n   ');
-        a = strrep(a, ']', '\n];\n\n');
-        a = strrep(a, ' 0', '\t0');
-        a = strrep(a, ' 1', '\t1');  % space out 1s
-        a = strrep(a, '0\t', '0.000000\t');  % add decimals to 0s
-        a = strrep(a, ' 1\t', ' 1.000000\t');  % add decimals to 1s
-        a = strrep(a, '\t1', '\t1.000000');  % add decimals to 1s, alt. scenario
+        a(1) = [];
+        a(end) = [];
+        a = strrep(a, ';', ' ');
         
-        %{
-        % OPTION B: Using num2str.
-        a = num2str(cm);
-        a = strcat(a, ';');
-        a = a';
-        a = a(:)';
-        a = strrep(a, ';', '\n   ');
-        a = ['[\n   ', a, '];\n\n'];
-        a = strrep(a, '   ];', '];');
-        %}
+        % Split and append zeros.
+        n = 11;  % number of total digits
+        b = split(a);
+        for jj=1:length(b)
+            if length(b{jj}) == 1
+                b{jj} = [b{jj}, '.', repmat('0', [1,n - 2])];
+            elseif(length(b{jj}) <= 11)
+                b{jj} = [b{jj}, repmat('0', [1,n - length(b{jj})])];
+            end
+        end
+        b = reshape(b, [3, length(b)/3])';
+        
+        % Recompile into string.
+        d = "";
+        for jj=1:size(b, 1)
+            d = strcat(d, b{jj,1}, "\t", b{jj,2}, "\t", b{jj,3}, "\n");
+            if jj ~= size(b, 1); d = strcat(d, "\t"); end  % append spaces for next line
+        end
+        a = d;
+        %===================================================%
         
         txt = strcat(txt, a);
+        txt = strcat(txt, "];\n\n");
         
         txt = strcat(txt, "%%-- Modify the colormap by interpolation ---------------------------------%%\n");
         txt = strcat(txt, "%%   Note: Interpolation can be done in hsv or rgb space depending on opt_interp.\n");
