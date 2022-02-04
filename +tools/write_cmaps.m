@@ -40,7 +40,7 @@ for ii=1:length(fn)
         a = strrep(a, ';', '\n   ');
         a = strrep(a, '[', '[\n   ');
         a = strrep(a, ']', '\n];\n\n');
-        a = strrep(a, ' 0.', '\t0.');
+        a = strrep(a, ' ,0', '\t,0');
         txt = strcat(txt, a);
         
         txt = strcat(txt, "%%-- Modify the colormap by interpolation ---------------------------------%%\n");
@@ -50,6 +50,7 @@ for ii=1:length(fn)
         txt = strcat(txt, "    hsv = rgb2hsv(cm);\n");
         txt = strcat(txt, "    hsv = interp1(1:p, hsv, linspace(1,p,n), 'linear');\n");
         txt = strcat(txt, "    cm = hsv2rgb(hsv);\n");
+        txt = strcat(txt, "elseif strcmp(opt_interp, 'none') %% do nothing\n");
         txt = strcat(txt, "else\n");
         txt = strcat(txt, "    cm = interp1(1:p, cm, linspace(1,p,n), 'linear');\n\n");
         txt = strcat(txt, "end\n\n");
