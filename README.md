@@ -149,6 +149,8 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![YlGnBu](docs/YlGnBu.jpg) *ylgnbu*
 
+![PuGnBu](docs/pugnbu.jpg) *pugnbu*
+
 #### cmasher
 
 ![eclipse](docs/eclipse.jpg) *eclipse*
