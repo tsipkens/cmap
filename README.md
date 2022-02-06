@@ -38,13 +38,15 @@ Note that the *deep*, *dense*, *matter*, and *tempo* colormaps are reversed from
 
 ## Colormap sources
 
-Sources of these colormaps include:
+Most of the colormaps here are compiled from other sources. Sources of these colormaps include:
 
 ### matplotlib/mpl
 Colormaps designed by Stéfan van der Walt (https://github.com/stefanv) and Nathaniel Smith (https://github.com/njsmith). More information is available at https://bids.github.io/colormap/. Released under a [CCO license](https://creativecommons.org/about/cc0). You can learn more about the science behind the creation of these kinds of colormaps by watching their presentation of viridis: https://youtu.be/xAoljeRJ3lU. The cividis colormap is a variant of  ‘viridis’ developed by Jamie R. Nuñez, Christopher R. Anderton, and Ryan S. Renslow. 
 
 ### cmocean
-More information is available at https://matplotlib.org/cmocean/. Released under a [MIT license](https://opensource.org/licenses/MIT). The colormaps are associated with: Kristen M. Thyng, Chad A. Greene, Robert D. Hetland, Heather M. Zimmerle, and Steven F. DiMarco. True colors of oceanography: Guidelines for effective and accurate colormap selection. Oceanography, September 2016. http://dx.doi.org/10.5670/oceanog.2016.66.
+Colormaps designed by Thyng et al. More information is available at https://matplotlib.org/cmocean/. Released under a [MIT license](https://opensource.org/licenses/MIT). Citable as:
+
+> Kristen M. Thyng, Chad A. Greene, Robert D. Hetland, Heather M. Zimmerle, and Steven F. DiMarco. True colors of oceanography: Guidelines for effective and accurate colormap selection. Oceanography, September 2016. http://dx.doi.org/10.5670/oceanog.2016.66.
 
 ### colorbrewer2
 Colormaps by Cynthia Brewer and Mark Harrower. More information available at http://colorbrewer2.org/. Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). 
@@ -59,7 +61,7 @@ A. Mikhailov. Turbo, An Improved Rainbow Colormap for Visualization. More inform
 Originally for Python by [Michael Waskom](https://mwaskom.github.io/). For supporting discussion see README at https://github.com/mwaskom/seaborn and https://seaborn.pydata.org/tutorial/color_palettes.html. Released under a [BSD 3-Clause License](https://github.com/mwaskom/seaborn/blob/master/LICENSE). 
 
 ### Scientific colour maps
-A set of scientific colour maps by [Fabio Crameri](https://www.fabiocrameri.ch/colourmaps/). Released under an [MIT License](https://opensource.org/licenses/MIT). Citable at: 
+A set of scientific colour maps by [Fabio Crameri](https://www.fabiocrameri.ch/colourmaps/). Released under an [MIT License](https://opensource.org/licenses/MIT). Citable as: 
 
 > Crameri, F. (2018). Scientific colour maps. Zenodo. http://doi.org/10.5281/zenodo.1243862
 
