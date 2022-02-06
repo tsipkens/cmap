@@ -61,9 +61,13 @@ A. Mikhailov. Turbo, An Improved Rainbow Colormap for Visualization. More inform
 Originally for Python by [Michael Waskom](https://mwaskom.github.io/). For supporting discussion see README at https://github.com/mwaskom/seaborn and https://seaborn.pydata.org/tutorial/color_palettes.html. Released under a [BSD 3-Clause License](https://github.com/mwaskom/seaborn/blob/master/LICENSE). 
 
 ### Scientific colour maps
-A set of scientific colour maps by [Fabio Crameri](https://www.fabiocrameri.ch/colourmaps/). Released under an [MIT License](https://opensource.org/licenses/MIT). Citable as: 
+A set of scientific colormaps by [Fabio Crameri](https://www.fabiocrameri.ch/colourmaps/). Released under an [MIT License](https://opensource.org/licenses/MIT). Citable as: 
 
 > Crameri, F. (2018). Scientific colour maps. Zenodo. http://doi.org/10.5281/zenodo.1243862
+
+### cmyt
+
+A set of colormaps by Matthew Turk and yt Development Team. GitHub page: https://github.com/yt-project/cmyt. Released under a [Modified BSD License](https://github.com/yt-project/cmyt/blob/main/LICENSE). 
 
 ### custom
 
@@ -194,6 +198,12 @@ Sequential colormaps have a monotonic change in perceived brightness.
 ![oslo](docs/oslo.jpg) *oslo*
 
 ![tokyo](docs/tokyo.jpg) *tokyo*
+
+#### cmyt
+
+![arbre](docs/arbre.jpg) *arbre*
+
+![dusk](docs/dusk.jpg) *dusk*
 
 #### custom
 
