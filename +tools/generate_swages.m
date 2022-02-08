@@ -13,7 +13,7 @@ for ii=1:length(fn)
         % cmap_name = fn(ii).name(1:(end-4));
         cmap_name = fn(ii).name(1:(end-2));
         n = 350;
-        cm = eval([cmap_name, '(', num2str(n), ')']);
+        cm = eval([cmap_name, '(', num2str(n), ', "hsl")']);
         
         im = repmat(reshape(cm, [1,n,3]),[35,1,1]);
         
