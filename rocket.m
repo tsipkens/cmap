@@ -89,6 +89,10 @@ if strcmp(opt_interp, 'hsv')
     hsv = rgb2hsv(cm);
     hsv = interp1(1:p, hsv, linspace(1,p,n), 'linear');
     cm = hsv2rgb(hsv);
+elseif strcmp(opt_interp, 'hsv')
+    hsl = rgb2hsl(cm);
+    hsl = interp1(1:p, hsl, linspace(1,p,n), 'linear');
+    cm = hsv2rgb(hsl);
 elseif strcmp(opt_interp, 'none') % do nothing
 else
     cm = interp1(1:p, cm, linspace(1,p,n), 'linear');

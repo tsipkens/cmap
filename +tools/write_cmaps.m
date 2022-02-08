@@ -74,6 +74,10 @@ for ii=1:length(fn)
         txt = strcat(txt, "    hsv = rgb2hsv(cm);\n");
         txt = strcat(txt, "    hsv = interp1(1:p, hsv, linspace(1,p,n), 'linear');\n");
         txt = strcat(txt, "    cm = hsv2rgb(hsv);\n");
+        txt = strcat(txt, "elseif strcmp(opt_interp, 'hsv')\n");
+        txt = strcat(txt, "    hsl = rgb2hsl(cm);\n");
+        txt = strcat(txt, "    hsl = interp1(1:p, hsl, linspace(1,p,n), 'linear');\n");
+        txt = strcat(txt, "    cm = hsv2rgb(hsl);\n");
         txt = strcat(txt, "elseif strcmp(opt_interp, 'none') %% do nothing\n");
         txt = strcat(txt, "else\n");
         txt = strcat(txt, "    cm = interp1(1:p, cm, linspace(1,p,n), 'linear');\n");
