@@ -1,3 +1,4 @@
+
 # Perceptually uniform colormaps for MATLAB
 
 **NOTE**: All rights to the original authors. For licensing see information for individual sources in [Colormap sources](#colormap-sources). Custom colormaps new to this work are released under a [MIT License](https://opensource.org/licenses/MIT).
@@ -102,11 +103,11 @@ A sample plot generated using this procedure (Sipkens et al., Submitted):
 
 ---
 
-### Sequential colormaps
+## Sequential colormaps
 
 Sequential colormaps have a monotonic change in perceived brightness. 
 
-#### matplotlib
+### matplotlib
 
 ![cividis](docs/cividis.jpg) _cividis_
 
@@ -118,7 +119,7 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![viridis](docs/viridis.jpg) _viridis_
 
-#### cmocean
+### cmocean
 
 ![deep](docs/deep.jpg) _deep_
 
@@ -136,7 +137,7 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![thermal](docs/thermal.jpg) _thermal_
 
-#### colorbrewer
+### colorbrewer
 
 ![blues](docs/blues.jpg) _blues_
 
@@ -158,7 +159,7 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![YlGnBu](docs/YlGnBu.jpg) _ylgnbu_
 
-#### cmasher
+### cmasher
 
 ![eclipse](docs/eclipse.jpg) _eclipse_
 
@@ -172,7 +173,7 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![rainforest](docs/rainforest.jpg) _rainforest_
 
-#### seaborn
+### seaborn
 
 ![crest](docs/crest.jpg) _crest_
 
@@ -182,7 +183,7 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![rocket](docs/rocket.jpg) _rocket_
 
-#### scientific
+### scientific
 
 ![acton](docs/acton.jpg) _acton_
 
@@ -200,7 +201,7 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![tokyo](docs/tokyo.jpg) _tokyo_
 
-#### custom
+### custom
 
 ![fblue](docs/fblue.jpg) _fblue_
 
@@ -212,11 +213,11 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ---
 
-### Divergent colormaps
+## Divergent colormaps
 
 Divergent colormaps have the brightest or darkest color in the middle, with a monotonic change in perceived brightness in either direction.The colorbrewer colormaps are 
 
-#### cmocean
+### cmocean
 
 ![balanced](docs/balanced.jpg) _balanced_ (originally balance, name conflict in Matlab)
 
@@ -224,7 +225,7 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 
 ![delta](docs/delta.jpg) _delta_
 
-#### colorbrewer
+### colorbrewer
 
 ![RdBu](docs/RdBu.jpg) _rdbu_
 
@@ -238,7 +239,7 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 
 ![spectral](docs/spectral.jpg) _spectral_
 
-#### scientific
+### scientific
 
 ![cork](docs/cork.jpg) _cork_
 
@@ -248,9 +249,9 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 
 ---
 
-### Cyclic/rainbow colormaps
+## Cyclic/rainbow colormaps
 
-#### scientific
+### scientific
 
 ![bamo](docs/bamo.jpg) _bamo_
 
@@ -260,6 +261,6 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 
 ![viko](docs/viko.jpg) _viko_
 
-#### Other
+### Other
 
 ![turbo](docs/turbo.jpg) _turbo_ (dedicated source)
