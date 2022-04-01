@@ -75,7 +75,7 @@ A set of scientific colour maps by [Fabio Crameri](https://www.fabiocrameri.ch/c
 
 A set of custom colormaps specific to this package.The custom colormaps are only approximately perceptually uniform.
 
-## Sweep through colormap (cmap_sweep)
+## Sweep through colormap (`cmap_sweep`)
 
 A function is also included to sweep through colors in a standard Matlab plot. To demonstrate we first generate some synthetic data with a set number of lines:
 
@@ -101,7 +101,7 @@ A sample plot generated using this procedure (Sipkens et al., Submitted):
 
 <img src="docs/cmap_sweep.jpg" width="350px">
 
----
+# Catalogue
 
 ## Sequential colormaps
 
@@ -109,7 +109,7 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ### matplotlib
 
-![cividis](docs/cividis.jpg) _cividis_
+![cividis](docs/cividis.jpg | width=100) _cividis_
 
 ![inferno](docs/inferno.jpg) _inferno_
 
@@ -213,11 +213,11 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ## Divergent colormaps
 
-Divergent colormaps have the brightest or darkest color in the middle, with a monotonic change in perceived brightness in either direction.The colorbrewer colormaps are 
+Divergent colormaps have the brightest or darkest color in the middle, with a monotonic change in perceived brightness in either direction.Note that the colorbrewer colormaps are in the order of the characters (for example, _RdBu_ starts with red and goes to blue). The _balance_ colormap from cmocean has been renamed to _balanced_, to avoid a name conflict with a native MATLAB function.
 
 ### cmocean
 
-![balanced](docs/balanced.jpg) _balanced_ (originally balance, name conflict in Matlab)
+![balanced](docs/balanced.jpg) _balanced_
 
 ![curl](docs/curl.jpg) _curl_
 
