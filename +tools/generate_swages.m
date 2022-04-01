@@ -12,10 +12,10 @@ for ii=1:length(fn)
     if ~strcmp(fn(ii).name, 'cmap_sweep.m') % skip test data file
         % cmap_name = fn(ii).name(1:(end-4));
         cmap_name = fn(ii).name(1:(end-2));
-        n = 350;
+        n = 600;
         cm = eval([cmap_name, '(', num2str(n), ', "hsl")']);
         
-        im = repmat(reshape(cm, [1,n,3]),[35,1,1]);
+        im = repmat(reshape(cm, [1,n,3]),[25,1,1]);
         
         imwrite(im, ...
             ['docs/',cmap_name,'.jpg']);

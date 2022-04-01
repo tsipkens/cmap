@@ -40,7 +40,7 @@ Note that the _deep_, _dense_, _matter_, and _tempo_ colormaps are reversed from
 
 Sources of these colormaps include:
 
-### matplotlib/mpl
+### matplotlib
 
 Colormaps designed by Stéfan van der Walt (https://github.com/stefanv) and Nathaniel Smith (https://github.com/njsmith). More information is available at https://bids.github.io/colormap/. Released under a [CCO license](https://creativecommons.org/about/cc0). You can learn more about the science behind the creation of these kinds of colormaps by watching their presentation of viridis: https://youtu.be/xAoljeRJ3lU. The cividis colormap is a variant of ‘viridis’ developed by Jamie R. Nuñez, Christopher R. Anderton, and Ryan S. Renslow.
 
@@ -48,9 +48,9 @@ Colormaps designed by Stéfan van der Walt (https://github.com/stefanv) and Nath
 
 More information is available at https://matplotlib.org/cmocean/. Released under a [MIT license](https://opensource.org/licenses/MIT). The colormaps are associated with: Kristen M. Thyng, Chad A. Greene, Robert D. Hetland, Heather M. Zimmerle, and Steven F. DiMarco. True colors of oceanography: Guidelines for effective and accurate colormap selection. Oceanography, September 2016. http://dx.doi.org/10.5670/oceanog.2016.66.
 
-### colorbrewer2
+### colorbrewer
 
-Colormaps by Cynthia Brewer and Mark Harrower. More information available at http://colorbrewer2.org/. Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt).
+Colormaps by Cynthia Brewer and Mark Harrower. More information available at http://colorbrewer2.org/. Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). For diverging colormaps, the order of colors was made consistent with the the colormap names. For sequential colormaps, orders were adjusted such that darkest colors appear first. Original colormaps can be restored by using MATLAB's built-in `flipud(...)` function of the altered colormaps. 
 
 ### cmasher
 
@@ -64,7 +64,7 @@ A. Mikhailov. Turbo, An Improved Rainbow Colormap for Visualization. More inform
 
 Originally for Python by [Michael Waskom](https://mwaskom.github.io/). For supporting discussion see README at https://github.com/mwaskom/seaborn and https://seaborn.pydata.org/tutorial/color_palettes.html. Released under a [BSD 3-Clause License](https://github.com/mwaskom/seaborn/blob/master/LICENSE).
 
-### Scientific colour maps
+### scientific
 
 A set of scientific colour maps by [Fabio Crameri](https://www.fabiocrameri.ch/colourmaps/). Released under an [MIT License](https://opensource.org/licenses/MIT). Citable at:
 
@@ -72,7 +72,7 @@ A set of scientific colour maps by [Fabio Crameri](https://www.fabiocrameri.ch/c
 
 ### custom
 
-A set of custom colormaps specific to this package.
+A set of custom colormaps specific to this package.The custom colormaps are only approximately perceptually uniform.
 
 ## Sweep through colormap (cmap_sweep)
 
@@ -104,9 +104,9 @@ A sample plot generated using this procedure (Sipkens et al., Submitted):
 
 ### Sequential colormaps
 
-Sequential colormaps have a monotonic change in perceived brightness.
+Sequential colormaps have a monotonic change in perceived brightness. 
 
-#### matplotlib/mpl
+#### matplotlib
 
 ![cividis](docs/cividis.jpg) _cividis_
 
@@ -136,7 +136,7 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![thermal](docs/thermal.jpg) _thermal_
 
-#### colorbrewer2
+#### colorbrewer
 
 ![blues](docs/blues.jpg) _blues_
 
@@ -182,7 +182,7 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![rocket](docs/rocket.jpg) _rocket_
 
-#### Scientific colour maps
+#### scientific
 
 ![acton](docs/acton.jpg) _acton_
 
@@ -202,8 +202,6 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 #### custom
 
-(only approximately perceptually uniform)
-
 ![fblue](docs/fblue.jpg) _fblue_
 
 ![fgreen](docs/fgreen.jpg) _fgreen_
@@ -216,7 +214,7 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ### Divergent colormaps
 
-Divergent colormaps have the brightest or darkest color in the middle, with a monotonic change in perceived brightness in either direction.
+Divergent colormaps have the brightest or darkest color in the middle, with a monotonic change in perceived brightness in either direction.The colorbrewer colormaps are 
 
 #### cmocean
 
@@ -226,7 +224,7 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 
 ![delta](docs/delta.jpg) _delta_
 
-#### colorbrewer2
+#### colorbrewer
 
 ![RdBu](docs/RdBu.jpg) _rdbu_
 
@@ -240,7 +238,7 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 
 ![spectral](docs/spectral.jpg) _spectral_
 
-#### Scientific colour maps
+#### scientific
 
 ![cork](docs/cork.jpg) _cork_
 
@@ -252,7 +250,7 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 
 ### Cyclic/rainbow colormaps
 
-#### Scientific colour maps
+#### scientific
 
 ![bamo](docs/bamo.jpg) _bamo_
 
