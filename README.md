@@ -211,8 +211,6 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ![fred](docs/internet.jpg) _internet_
 
----
-
 ## Divergent colormaps
 
 Divergent colormaps have the brightest or darkest color in the middle, with a monotonic change in perceived brightness in either direction.The colorbrewer colormaps are 
@@ -246,8 +244,6 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 ![roma](docs/roma.jpg) _roma_
 
 ![vik](docs/vik.jpg) _vik_
-
----
 
 ## Cyclic/rainbow colormaps
 
