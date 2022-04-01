@@ -109,107 +109,107 @@ Sequential colormaps have a monotonic change in perceived brightness.
 
 ### matplotlib
 
-![cividis](docs/cividis.jpg | width=100) _cividis_
+<img src="docs/cividis.jpg" width="85%" height="25"> _cividis_
 
-![inferno](docs/inferno.jpg) _inferno_
+<img src="docs/inferno.jpg" width="85%" height="25"> _inferno_
 
-![magma](docs/magma.jpg) _magma_
+<img src="docs/magma.jpg" width="85%" height="25"> _magma_
 
-![plasma](docs/plasma.jpg) _plasma_
+<img src="docs/plasma.jpg" width="85%" height="25"> _plasma_
 
-![viridis](docs/viridis.jpg) _viridis_
+<img src="docs/viridis.jpg" width="85%" height="25"> _viridis_
 
 ### cmocean
 
-![deep](docs/deep.jpg) _deep_
+<img src="docs/deep.jpg" width="85%" height="25"> _deep_
 
-![dense](docs/dense.jpg) _dense_
+<img src="docs/dense.jpg" width="85%" height="25"> _dense_
 
-![haline](docs/haline.jpg) _haline_
+<img src="docs/haline.jpg" width="85%" height="25"> _haline_
 
-![ice](docs/ice.jpg) _ice_
+<img src="docs/ice.jpg" width="85%" height="25"> _ice_
 
-![matter](docs/matter.jpg) _matter_
+<img src="docs/matter.jpg" width="85%" height="25"> _matter_
 
-![speed](docs/speed.jpg) _speed_
+<img src="docs/speed.jpg" width="85%" height="25"> _speed_
 
-![tempo](docs/tempo.jpg) _tempo_
+<img src="docs/tempo.jpg" width="85%" height="25"> _tempo_
 
-![thermal](docs/thermal.jpg) _thermal_
+<img src="docs/thermal.jpg" width="85%" height="25"> _thermal_
 
 ### colorbrewer
 
-![blues](docs/blues.jpg) _blues_
+<img src="docs/blues.jpg" width="85%" height="25"> _blues_
 
-![BuPu](docs/BuPu.jpg) _bupu_
+<img src="docs/BuPu.jpg" width="85%" height="25"> _bupu_
 
-![GnBu](docs/GnBu.jpg) _gnbu_
+<img src="docs/GnBu.jpg" width="85%" height="25"> _gnbu_
 
-![greens](docs/greens.jpg) _greens_
+<img src="docs/greens.jpg" width="85%" height="25"> _greens_
 
-![PuGnBu](docs/pugnbu.jpg) _pugnbu_
+<img src="docs/pugnbu.jpg" width="85%" height="25"> _pugnbu_
 
-![PuRd](docs/PuRd.jpg) _purd_
+<img src="docs/PuRd.jpg" width="85%" height="25"> _purd_
 
-![purples](docs/purples.jpg) _purples_
+<img src="docs/purples.jpg" width="85%" height="25"> _purples_
 
-![RdPu](docs/RdPu.jpg) _rdpu_
+<img src="docs/RdPu.jpg" width="85%" height="25"> _rdpu_
 
-![reds](docs/reds.jpg) _reds_
+<img src="docs/reds.jpg" width="85%" height="25"> _reds_
 
-![YlGnBu](docs/YlGnBu.jpg) _ylgnbu_
+<img src="docs/YlGnBu.jpg" width="85%" height="25"> _ylgnbu_
 
 ### cmasher
 
-![eclipse](docs/eclipse.jpg) _eclipse_
+<img src="docs/eclipse.jpg" width="85%" height="25"> _eclipse_
 
-![ember](docs/ember.jpg) _ember_
+<img src="docs/ember.jpg" width="85%" height="25"> _ember_
 
-![lavender](docs/lavender.jpg) _lavender_
+<img src="docs/lavender.jpg" width="85%" height="25"> _lavender_
 
-![nuclear](docs/nuclear.jpg) _nuclear_
+<img src="docs/nuclear.jpg" width="85%" height="25"> _nuclear_
 
-![ocean](docs/ocean.jpg) _ocean_
+<img src="docs/ocean.jpg" width="85%" height="25"> _ocean_
 
-![rainforest](docs/rainforest.jpg) _rainforest_
+<img src="docs/rainforest.jpg" width="85%" height="25"> _rainforest_
 
 ### seaborn
 
-![crest](docs/crest.jpg) _crest_
+<img src="docs/crest.jpg" width="85%" height="25"> _crest_
 
-![flare](docs/flare.jpg) _flare_
+<img src="docs/flare.jpg" width="85%" height="25"> _flare_
 
-![mako](docs/mako.jpg) _mako_
+<img src="docs/mako.jpg" width="85%" height="25"> _mako_
 
-![rocket](docs/rocket.jpg) _rocket_
+<img src="docs/rocket.jpg" width="85%" height="25"> _rocket_
 
 ### scientific
 
-![acton](docs/acton.jpg) _acton_
+<img src="docs/acton.jpg" width="85%" height="25"> _acton_
 
-![buda](docs/buda.jpg) _buda_
+<img src="docs/buda.jpg" width="85%" height="25"> _buda_
 
-![devon](docs/devon.jpg) _devon_
+<img src="docs/devon.jpg" width="85%" height="25"> _devon_
 
-![hawaii](docs/hawaii.jpg) _hawaii_
+<img src="docs/hawaii.jpg" width="85%" height="25"> _hawaii_
 
-![imola](docs/imola.jpg) _imola_
+<img src="docs/imola.jpg" width="85%" height="25"> _imola_
 
-![lajolla](docs/lajolla.jpg) _lajolla_
+<img src="docs/lajolla.jpg" width="85%" height="25"> _lajolla_
 
-![oslo](docs/oslo.jpg) _oslo_
+<img src="docs/oslo.jpg" width="85%" height="25"> _oslo_
 
-![tokyo](docs/tokyo.jpg) _tokyo_
+<img src="docs/tokyo.jpg" width="85%" height="25"> _tokyo_
 
 ### custom
 
-![fblue](docs/fblue.jpg) _fblue_
+<img src="docs/fblue.jpg" width="85%" height="25"> _fblue_
 
-![fgreen](docs/fgreen.jpg) _fgreen_
+<img src="docs/fgreen.jpg" width="85%" height="25"> _fgreen_
 
-![fred](docs/fred.jpg) _fred_
+<img src="docs/fred.jpg" width="85%" height="25"> _fred_
 
-![fred](docs/internet.jpg) _internet_
+<img src="docs/internet.jpg" width="85%" height="25"> _internet_
 
 ## Divergent colormaps
 
@@ -217,46 +217,46 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 
 ### cmocean
 
-![balanced](docs/balanced.jpg) _balanced_
+<img src="docs/balanced.jpg" width="85%" height="25"> _balanced_
 
-![curl](docs/curl.jpg) _curl_
+<img src="docs/curl.jpg" width="85%" height="25"> _curl_
 
-![delta](docs/delta.jpg) _delta_
+<img src="docs/delta.jpg" width="85%" height="25"> _delta_
 
 ### colorbrewer
 
-![RdBu](docs/RdBu.jpg) _rdbu_
+<img src="docs/RdBu.jpg" width="85%" height="25"> _rdbu_
 
-![RdYlGn](docs/RdYlGn.jpg) _rdylgn_
+<img src="docs/RdYlGn.jpg" width="85%" height="25"> _rdylgn_
 
-![PiYG](docs/PiYG.jpg) _piyg_
+<img src="docs/PiYG.jpg" width="85%" height="25"> _piyg_
 
-![PrGn](docs/PrGn.jpg) _prgn_
+<img src="docs/PrGn.jpg" width="85%" height="25"> _prgn_
 
-![PuOr](docs/PuOr.jpg) _puor_
+<img src="docs/PuOr.jpg" width="85%" height="25"> _puor_
 
-![spectral](docs/spectral.jpg) _spectral_
+<img src="docs/spectral.jpg" width="85%" height="25"> _spectral_
 
 ### scientific
 
-![cork](docs/cork.jpg) _cork_
+<img src="docs/cork.jpg" width="85%" height="25"> _cork_
 
-![roma](docs/roma.jpg) _roma_
+<img src="docs/roma.jpg" width="85%" height="25"> _roma_
 
-![vik](docs/vik.jpg) _vik_
+<img src="docs/vik.jpg" width="85%" height="25"> _vik_
 
 ## Cyclic/rainbow colormaps
 
 ### scientific
 
-![bamo](docs/bamo.jpg) _bamo_
+<img src="docs/bamo.jpg" width="85%" height="25"> _bamo_
 
-![corko](docs/corko.jpg) _corko_
+<img src="docs/corko.jpg" width="85%" height="25"> _corko_
 
-![romao](docs/romao.jpg) _romao_
+<img src="docs/romao.jpg" width="85%" height="25"> _romao_
 
-![viko](docs/viko.jpg) _viko_
+<img src="docs/viko.jpg" width="85%" height="25"> _viko_
 
 ### Other
 
-![turbo](docs/turbo.jpg) _turbo_ (dedicated source)
+<img src="docs/turbo.jpg" width="85%" height="25"> _turbo_ (dedicated source)
