@@ -8,7 +8,7 @@
 This repository contains files for colormaps, mostly compiled from multiple, external sources (see [dedicated section below](#colormap-sources)), with some _custom_ colormaps that are specific to this package. The first step in their use is to add the parent folder to the sample project, e.g.,
 
 ```Matlab
-addpath cmap; % add cmap folder to the Matlab path
+addpath cmap; % add cmap folder to the MATLAB path
 ```
 
 Then colormaps can be loaded by calling the functions that shares their name. For example, you can get the color data for the viridis colormap using,
@@ -75,9 +75,13 @@ A set of scientific colour maps by [Fabio Crameri](https://www.fabiocrameri.ch/c
 
 A set of custom colormaps specific to this package.The custom colormaps are only approximately perceptually uniform.
 
-## Sweep through colormap (`cmap_sweep`)
+### Other resources
 
-A function is also included to sweep through colors in a standard Matlab plot. To demonstrate we first generate some synthetic data with a set number of lines:
+A catalogue of colormaps for Julia can be found here: [Catalogue of ColorSchemes](https://juliagraphics.github.io/ColorSchemes.jl/stable/catalogue).
+
+## Sweep through colormap
+
+The `cmap_sweep(n, cm)` function is also included to sweep through colours in a standard MATLAB plot. To demonstrate we first generate some synthetic data with a set number of lines:
 
 ```Matlab
 n_lines = 40; % number of lines to plot
@@ -105,7 +109,7 @@ A sample plot generated using this procedure (Sipkens et al., Submitted):
 
 ## Sequential colormaps
 
-Sequential colormaps have a monotonic change in perceived brightness. 
+Sequential colormaps have a monotonic change in perceived brightness. Colormaps consistently proceed from the darkest to the lightest colour.
 
 ### matplotlib
 
@@ -245,7 +249,13 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 
 <img src="docs/vik.jpg" width="77%" height="25"> _vik_
 
-## Cyclic/rainbow colormaps
+### Other (rainbow)
+
+<img src="docs/turbo.jpg" width="77%" height="25"> _turbo_ (dedicated source)
+
+## Cyclicss colormaps
+
+These colormaps either 
 
 ### scientific
 
@@ -256,7 +266,3 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 <img src="docs/romao.jpg" width="77%" height="25"> _romao_
 
 <img src="docs/viko.jpg" width="77%" height="25"> _viko_
-
-### Other
-
-<img src="docs/turbo.jpg" width="77%" height="25"> _turbo_ (dedicated source)
