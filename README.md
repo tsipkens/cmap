@@ -253,7 +253,7 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 
 <img src="docs/turbo.jpg" width="77%" height="25"> _turbo_ (dedicated source)
 
-## Cyclicss colormaps
+## Cyclic colormaps
 
 These colormaps either 
 
