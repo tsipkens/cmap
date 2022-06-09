@@ -1,20 +1,24 @@
 
+% PLOT_PERCEPTION  Plot the LAB-based perception for a colormap.
+%  
+%  Top plot shows the colormap. 
+%  Bottom plot shows the percieved lightness (top half) and a line
+%  perception scale (bottom half). 
+
 clear;
 close all;
-
-cname = 'internet';
 
 cm = viridis;
 
 %{
-load('C:\Users\tsipk\Downloads\fm.mat');
+load('fm.mat');
 cm = cm ./ 255;
 cm = flipud(cm);
 %}
 
 %{
 % Option to correct perception.
-n = 150;  % update above n to smaller number
+n = 70;  % update above n to smaller number
 cm = tools.perception_correction(cm, n);
 %}
 
@@ -32,6 +36,3 @@ colormap(ax1, cm);
 ax2 = subplot(2,1,2);
 imagesc([l; pu]);
 colormap(ax2, gray);
-
-
-
