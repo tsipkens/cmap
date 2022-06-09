@@ -215,6 +215,8 @@ Sequential colormaps have a monotonic change in perceived brightness. Colormaps 
 
 <img src="docs/internet.jpg" width="74%" height="25"> _internet_
 
+<img src="docs/fmviz.jpg" width="74%" height="25"> _fmviz_
+
 ## Divergent colormaps
 
 Divergent colormaps have the brightest or darkest color in the middle, with a monotonic change in perceived brightness in either direction.Note that the colorbrewer colormaps are in the order of the characters (for example, _RdBu_ starts with red and goes to blue). The _balance_ colormap from cmocean has been renamed to _balanced_, to avoid a name conflict with a native MATLAB function.
