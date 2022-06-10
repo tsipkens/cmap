@@ -9,7 +9,7 @@ function cm = interpolate(cm, n, opt)
 
 % by default, interpolate in rgb space
 if ~exist('opt', 'var'); opt = []; end
-if isempty(opt); opt = 'rgb'; end
+if isempty(opt); opt = 'lab'; end
 
 p = size(cm,1); % default size of colormap
 if strcmp(opt, 'hsv')
