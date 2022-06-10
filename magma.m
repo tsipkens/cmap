@@ -1,5 +1,5 @@
 
-function cm = magma(n, opt_interp)
+function cm = magma(n, varargin)
 % Colormap: magma
 
 %-- Parse inputs ---------------------------------------------------------%
@@ -12,10 +12,6 @@ if isempty(n)
       n = size(f.Colormap,1);
    end
 end
-
-% by default, interpolate in rgb space
-if ~exist('opt_interp','var'); opt_interp = []; end
-if isempty(opt_interp); opt_interp = 'rgb'; end
 %-------------------------------------------------------------------------%
 
 % Data for colormap:
@@ -278,20 +274,7 @@ cm = [
 	0.987053000	0.991438000	0.749504000
 ];
 
-%-- Modify the colormap by interpolation ---------------------------------%
-%   Note: Interpolation can be done in hsv or rgb space depending on opt_interp.
-p = size(cm,1); % default size of colormap
-if strcmp(opt_interp, 'hsv')
-    hsv = rgb2hsv(cm);
-    hsv = interp1(1:p, hsv, linspace(1,p,n), 'linear');
-    cm = hsv2rgb(hsv);
-elseif strcmp(opt_interp, 'lab')
-    lab = rgb2lab(cm);
-    lab = interp1(1:p, lab, linspace(1,p,n), 'linear');
-    cm = lab2rgb(lab);
-elseif strcmp(opt_interp, 'none') % do nothing
-else
-    cm = interp1(1:p, cm, linspace(1,p,n), 'linear');
-end
+% Modify the colormap by interpolation to match number of waypoints.
+cm = tools.interpolate(cm, n, varargin{:});
 
 end
