@@ -233,6 +233,8 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 
 ### colorbrewer
 
+<img src="docs/BrBG.jpg" width="74%" height="25"> _brbg_
+
 <img src="docs/RdBu.jpg" width="74%" height="25"> _rdbu_
 
 <img src="docs/RdYlGn.jpg" width="74%" height="25"> _rdylgn_
