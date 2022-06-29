@@ -255,6 +255,10 @@ Divergent colormaps have the brightest or darkest color in the middle, with a mo
 
 <img src="docs/vik.jpg" width="74%" height="25"> _vik_
 
+### custom
+
+<img src="docs/weather.jpg" width="74%" height="25"> _weather_
+
 ### turbo
 
 <img src="docs/turbo.jpg" width="74%" height="25"> _turbo_
