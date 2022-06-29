@@ -213,6 +213,8 @@ Sequential colormaps have a monotonic change in perceived brightness. Colormaps 
 
 <img src="docs/fred.jpg" width="74%" height="25"> _fred_
 
+<img src="docs/fpurple.jpg" width="74%" height="25"> _fpurple_
+
 <img src="docs/internet.jpg" width="74%" height="25"> _internet_
 
 <img src="docs/fmviz.jpg" width="74%" height="25"> _fmviz_
