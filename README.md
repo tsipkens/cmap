@@ -11,7 +11,7 @@ This repository contains files for colormaps, mostly compiled from multiple, ext
 addpath cmap; % add cmap folder to the MATLAB path
 ```
 
-Then colormaps can be loaded by calling the functions that shares their name. For example, you can get the color data for the viridis colormap using,
+Then colormaps can be loaded by calling the functions that share their name. For example, you can get the color data for the viridis colormap using,
 
 ```Matlab
 cm = viridis; % return colormap data to cm
@@ -51,11 +51,11 @@ More information is available at https://matplotlib.org/cmocean/. Released under
 
 ### colorbrewer
 
-Colormaps by Cynthia Brewer and Mark Harrower. More information available at http://colorbrewer2.org/. Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). For diverging colormaps, the order of colors was made consistent with the the colormap names. For sequential colormaps, orders were adjusted such that darkest colors appear first. Original colormaps can be restored by using MATLAB's built-in `flipud(...)` function of the altered colormaps.
+Colormaps by Cynthia Brewer and Mark Harrower. More information available at http://colorbrewer2.org/. Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). For diverging colormaps, the order of colors was made consistent with the colormap names. For sequential colormaps, orders were adjusted such that darkest colors appear first. Original colormaps can be restored by using MATLAB's built-in `flipud(...)` function of the altered colormaps.
 
 ### cmasher
 
-A collection of scientific colormaps for making accessible, informative and _cmashing_ plots in Python. More information available at https://github.com/1313e/CMasher and https://cmasher.readthedocs.io/. Released under a [BSD 3-Clause License](https://github.com/1313e/CMasher/blob/master/LICENSE).
+A collection of scientific colormaps for making accessible, informative and _cmashing_ plots in Python. More information is available at https://github.com/1313e/CMasher and https://cmasher.readthedocs.io/. Released under a [BSD 3-Clause License](https://github.com/1313e/CMasher/blob/master/LICENSE).
 
 ### turbo
 
@@ -73,7 +73,7 @@ A set of scientific colour maps by [Fabio Crameri](https://www.fabiocrameri.ch/c
 
 ### custom
 
-A set of custom colormaps specific to this package.The custom colormaps are only approximately perceptually uniform.
+A set of custom colormaps specific to this package. The custom colormaps are only approximately perceptually uniform.
 
 ### Other resources
 
@@ -223,7 +223,7 @@ Sequential colormaps have a monotonic change in perceived brightness. Colormaps 
 
 ## Divergent colormaps
 
-Divergent colormaps have the brightest or darkest color in the middle, with a monotonic change in perceived brightness in either direction.Note that the colorbrewer colormaps are in the order of the characters (for example, _RdBu_ starts with red and goes to blue). The _balance_ colormap from cmocean has been renamed to _balanced_, to avoid a name conflict with a native MATLAB function.
+Divergent colormaps have the brightest or darkest color in the middle, with a monotonic change in perceived brightness in either direction. Note that the colorbrewer colormaps are in the order of the characters (for example, _RdBu_ starts with red and goes to blue). The _balance_ colormap from cmocean has been renamed to _balanced_, to avoid a name conflict with a native MATLAB function.
 
 ### cmocean
 
