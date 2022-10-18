@@ -51,7 +51,7 @@ More information is available at https://matplotlib.org/cmocean/. Released under
 
 ### colorbrewer
 
-Colormaps by Cynthia Brewer and Mark Harrower. More information available at http://colorbrewer2.org/. Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). For diverging colormaps, the order of colors was made consistent with the the colormap names. For sequential colormaps, orders were adjusted such that darkest colors appear first. Original colormaps can be restored by using MATLAB's built-in `flipud(...)` function of the altered colormaps. 
+Colormaps by Cynthia Brewer and Mark Harrower. More information available at http://colorbrewer2.org/. Released under an [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt). For diverging colormaps, the order of colors was made consistent with the the colormap names. For sequential colormaps, orders were adjusted such that darkest colors appear first. Original colormaps can be restored by using MATLAB's built-in `flipud(...)` function of the altered colormaps.
 
 ### cmasher
 
@@ -130,6 +130,8 @@ Sequential colormaps have a monotonic change in perceived brightness. Colormaps 
 <img src="docs/dense.jpg" width="74%" height="25"> _dense_
 
 <img src="docs/haline.jpg" width="74%" height="25"> _haline_
+
+<img src="docs/oxy.jpg" width="74%" height="25"> _oxy_
 
 <img src="docs/ice.jpg" width="74%" height="25"> _ice_
 
