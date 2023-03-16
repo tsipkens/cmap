@@ -7,7 +7,7 @@
 %   cm        Colormap that is used to specify the ColorOrder.
 %=========================================================================%
 
-function [cm2] = cmap_sweep(n,cm)
+function [cm2] = cmap_sweep(n, cm)
 
 
 if ~exist('cm','var'); cm = []; end
@@ -15,14 +15,16 @@ if isempty(cm); cm = colormap('gray'); end % by default use grayscale
 
 
 % Determine positions in colormap to use.
-% Method varies subtly depending on n.
+% Method varies depending on n.
 if n == 1
     cm2 = cm(round(size(cm,1) / 2), :);
-elseif n < 5
+
+elseif n < 8  % span full lengths of colormap (expects long colormap)
     n1 = round((0:(n-1)) ./ (n-1) .* ...
         (size(cm,1) - 1)) + 1;
     cm2 = cm(n1, :);
-else
+
+else  % index existing colormap entries
     n1 = floor(size(cm, 1) / n); % interval between colormap indices
     n2 = length(cm) - n*n1 + 1;   % starting index, i.e. mod(cm,n) does not always equal 0
     cm2 = cm(n2:n1:end, :);    % adjust colormap to appropriate size
